@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customers — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="customers">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Customers</h1>
+          <p>Spend, order counts and account status for everyone who has
+             signed up.</p>
+        </div>
+        <div class="admin-page__actions">
+          <a class="btn btn--outline btn--sm" href="../shop.html">Open storefront</a>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="table-toolbar">
+          <div class="table-toolbar__search">
+            <label class="sr-only" for="adminCustomerSearch">Search customers</label>
+            <input class="input" type="search" id="adminCustomerSearch"
+                   data-admin-customer-search placeholder="Search name or email…"
+                   autocomplete="off">
+          </div>
+
+          <div class="table-toolbar__right">
+            <label class="sr-only" for="adminCustomerStatus">Filter by status</label>
+            <select class="select select--sm" id="adminCustomerStatus" data-admin-customer-status>
+              <option value="all">All customers</option>
+              <option value="active">Active</option>
+              <option value="blocked">Blocked</option>
+            </select>
+            <span class="muted" data-admin-filter-count></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="adminCustomersTable">
+            <thead>
+              <tr>
+                <th scope="col">Customer</th>
+                <th scope="col">City</th>
+                <th scope="col" class="num">Orders</th>
+                <th scope="col" class="num">Lifetime spend</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="num">Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-customers-tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="admin-note">
+        Blocking a customer also stops them signing in, since the local account
+        record is updated alongside the customer list.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Macro detail view of the product surface">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAFAFC"/>
+      <stop offset="1" stop-color="#E9E9EF"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2F3F6"/>
+      <stop offset="0.35" stop-color="#B6BAC4"/>
+      <stop offset="0.6" stop-color="#6E7480"/>
+      <stop offset="1" stop-color="#DDE0E6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.35" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="320" cy="300" r="300" fill="#FFFFFF" opacity="0.6" filter="url(#soft)"/>
+
+  <g transform="rotate(-18 400 400)">
+    <rect x="120" y="150" width="560" height="500" rx="90" fill="url(#metal)"/>
+    <rect x="120" y="150" width="560" height="500" rx="90" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3"/>
+    <g stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round">
+      <path d="M186 300 L614 300"/>
+      <path d="M186 360 L614 360"/>
+      <path d="M186 420 L614 420"/>
+      <path d="M186 480 L614 480"/>
+    </g>
+    <circle cx="614" cy="200" r="18" fill="#0E1015"/>
+  </g>
+
+  <ellipse cx="290" cy="270" rx="180" ry="110" fill="url(#glow)" transform="rotate(-18 290 270)"/>
+</svg>

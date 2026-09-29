@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Pulse Buds 3 wireless earbuds in white">
+  <defs>
+    <linearGradient id="bgk10" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#e7e8ea"/>
+      <stop offset="0.46" stop-color="#dddfe1"/>
+      <stop offset="1" stop-color="#c0c2c4"/>
+    </linearGradient>
+    <radialGradient id="poolk10" cx="0.42" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vigk10" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.30"/>
+    </radialGradient>
+    <linearGradient id="floork10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadek10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflk10">
+      <rect x="0" y="604" width="800" height="196" fill="url(#fadek10)"/>
+    </mask>
+    <filter id="softk10" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2k10" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="dropk10" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1A1A20" flood-opacity="0.34"/>
+    </filter>
+    <linearGradient id="mk10" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#f3f4f5"/>
+      <stop offset="0.22" stop-color="#eeeff1"/>
+      <stop offset="0.5" stop-color="#b9babb"/>
+      <stop offset="0.74" stop-color="#edeef0"/>
+      <stop offset="1" stop-color="#9c9d9e"/>
+    </linearGradient>
+    <linearGradient id="glossk10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgk10)"/>
+  <rect width="800" height="800" fill="url(#poolk10)"/>
+  <rect x="0" y="574" width="800" height="226" fill="url(#floork10)"/>
+
+  <ellipse cx="400" cy="610" rx="150" ry="32" fill="#141419" opacity="0.30" filter="url(#softk10)"/>
+  <ellipse cx="400" cy="606" rx="78" ry="19.2" fill="#0E0E12" opacity="0.38" filter="url(#soft2k10)"/>
+  <g id="pk10" filter="url(#dropk10)">
+
+    <g>
+      <rect x="186" y="236" width="58" height="150" rx="29" fill="url(#mk10)" transform="rotate(-13 215 310)"/>
+      <ellipse cx="204" cy="252" rx="29" ry="31" fill="url(#mk10)" transform="rotate(-13 215 310)"/>
+      <ellipse cx="198" cy="244" rx="13" ry="12" fill="#" opacity="0.75" transform="rotate(-13 215 310)"/>
+      <ellipse cx="194" cy="238" rx="5" ry="4" fill="#FFFFFF" opacity="0.7" transform="rotate(-13 215 310)"/>
+    </g>
+    <g>
+      <rect x="556" y="236" width="58" height="150" rx="29" fill="url(#mk10)" transform="rotate(13 585 310)"/>
+      <ellipse cx="596" cy="252" rx="29" ry="31" fill="url(#mk10)" transform="rotate(13 585 310)"/>
+      <ellipse cx="602" cy="244" rx="13" ry="12" fill="#" opacity="0.75" transform="rotate(13 585 310)"/>
+      <ellipse cx="606" cy="238" rx="5" ry="4" fill="#FFFFFF" opacity="0.7" transform="rotate(13 585 310)"/>
+    </g>
+    <rect x="270" y="430" width="260" height="150" rx="46" fill="url(#mk10)"/>
+    <rect x="270" y="430" width="260" height="150" rx="46" fill="url(#glossk10)"/>
+    <path d="M270 436 a 46 46 0 0 1 260 0" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="288" y="444" width="46" height="8" rx="4" fill="#777778" opacity="0.6"/>
+    <circle cx="492" cy="552" r="7" fill="#" opacity="0.85"/>
+    <path d="M304 450 A 40 40 0 0 1 360 446" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g mask="url(#reflk10)">
+    <use href="#pk10" transform="translate(0 1208) scale(1 -1)"/>
+  </g>
+  <rect width="800" height="800" fill="url(#vigk10)"/>
+</svg>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your account — Lumen</title>
+  <meta name="description" content="Create a free Lumen account to track orders, save delivery addresses, build a wishlist and check out in one tap.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page" data-page="signup">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div data-slot="header"></div>
+
+  <main class="page__main" id="main">
+    <div class="auth">
+
+      <aside class="auth__aside">
+        <a class="brand auth__brand" href="index.html">
+          <img class="brand__mark" src="assets/icons/logo.svg" alt="" width="26" height="26">
+          <span class="brand__name">Lumen</span>
+        </a>
+
+        <div class="auth__quote">
+          <h2>One account, fewer forms.</h2>
+          <p>Saved addresses, a real order history you can return to, and
+             restock alerts for anything you put on your wishlist.</p>
+        </div>
+
+        <dl class="auth__stats">
+          <div>
+            <dt>Free</dt>
+            <dd>Delivery over ₹999</dd>
+          </div>
+          <div>
+            <dt>7 days</dt>
+            <dd>No-cost returns</dd>
+          </div>
+        </dl>
+
+        <img class="auth__aside-art" src="assets/images/detail-inuse.svg" alt="" aria-hidden="true">
+      </aside>
+
+      <div class="auth__main">
+        <div class="auth__form">
+          <header class="auth__head">
+            <h1>Create account</h1>
+            <p>Already have one? <a class="link" href="login.html">Sign in
+               instead</a>.</p>
+          </header>
+
+          <form class="stack" id="signupForm" novalidate>
+            <div class="field">
+              <label class="field__label" for="signupName">Full name</label>
+              <input class="input" type="text" id="signupName" name="name"
+                     placeholder="Aarav Sharma" autocomplete="name" required>
+              <p class="field__error" data-error="name"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="signupEmail">Email address</label>
+              <input class="input" type="email" id="signupEmail" name="email"
+                     placeholder="you@example.com" autocomplete="email" required>
+              <p class="field__error" data-error="email"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="signupPhone">Mobile number</label>
+              <input class="input" type="tel" id="signupPhone" name="phone"
+                     placeholder="98765 43210" autocomplete="tel" inputmode="numeric" required>
+              <p class="field__error" data-error="phone"></p>
+              <p class="field__hint">Used only for delivery updates and OTP
+                 confirmations.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="signupPassword">Password</label>
+              <input class="input" type="password" id="signupPassword" name="password"
+                     placeholder="At least 8 characters" autocomplete="new-password" required>
+              <p class="field__error" data-error="password"></p>
+              <div class="pw-meter" aria-hidden="true">
+                <span class="pw-meter__bar" data-strength-meter></span>
+              </div>
+              <p class="field__hint" data-strength-label></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="signupConfirm">Confirm password</label>
+              <input class="input" type="password" id="signupConfirm" name="confirm"
+                     placeholder="Repeat your password" autocomplete="new-password" required>
+              <p class="field__error" data-error="confirm"></p>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" id="signupTerms" name="terms" required>
+              <span>I agree to the terms of service and privacy policy.</span>
+            </label>
+
+            <button class="btn btn--primary btn--block" type="submit">Create account</button>
+          </form>
+
+          <p class="demo-hint">
+            <strong>This is a demonstration.</strong> Your account is created
+            locally in this browser using <code>localStorage</code>. Nothing is
+            sent to a server, and the password is never really secure. Clear
+            your browser data to start over.
+          </p>
+
+          <p class="auth__foot">
+            Already registered? <a class="link" href="login.html">Sign in</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div data-slot="footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reviews — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="reviews">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Reviews</h1>
+          <p>Approve pending reviews before they appear on product pages.</p>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="table-toolbar">
+          <div class="table-toolbar__right">
+            <span class="muted" data-admin-filter-count></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Review</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="num">Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-reviews-tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="admin-note">
+        Only approved reviews are shown to shoppers. Deleting one here removes it
+        from the product page for good.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

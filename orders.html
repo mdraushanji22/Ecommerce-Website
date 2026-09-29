@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order history — Lumen</title>
+  <meta name="description" content="Track your Lumen orders, view delivery status and download invoices.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page" data-page="orders">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div data-slot="header"></div>
+
+  <main class="page__main" id="main">
+    <div class="container">
+
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Account</a>
+        <span aria-current="page">Orders</span>
+      </nav>
+
+      <div class="account">
+
+        <aside class="account__card" aria-label="Account">
+          <nav class="account__nav">
+            <a href="profile.html">Profile &amp; settings</a>
+            <a class="is-active" href="orders.html" aria-current="page">Order history</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="shop.html">Continue shopping</a>
+          </nav>
+        </aside>
+
+        <section>
+          <header class="page-head">
+            <h1>Order history</h1>
+            <p data-orders-count-label>No orders match</p>
+          </header>
+
+          <div class="orders-bar">
+            <div class="orders-bar__search">
+              <label class="sr-only" for="orderSearch">Search orders</label>
+              <input class="input" type="search" id="orderSearch" data-order-search
+                     placeholder="Search by order number or product…" autocomplete="off">
+            </div>
+
+            <div class="orders-bar__filters" data-order-filters role="group" aria-label="Filter by status">
+              <label class="check">
+                <input type="radio" name="orderStatus" value="all" data-order-filter checked>
+                <span>All</span>
+              </label>
+              <label class="check">
+                <input type="radio" name="orderStatus" value="processing" data-order-filter>
+                <span>Processing</span>
+              </label>
+              <label class="check">
+                <input type="radio" name="orderStatus" value="shipped" data-order-filter>
+                <span>Shipped</span>
+              </label>
+              <label class="check">
+                <input type="radio" name="orderStatus" value="delivered" data-order-filter>
+                <span>Delivered</span>
+              </label>
+              <label class="check">
+                <input type="radio" name="orderStatus" value="cancelled" data-order-filter>
+                <span>Cancelled</span>
+              </label>
+            </div>
+
+            <button class="btn btn--ghost btn--sm" type="button" data-orders-clear>Clear</button>
+          </div>
+
+          <div data-orders-root></div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <div data-slot="footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

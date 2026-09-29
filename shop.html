@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all products — Lumen</title>
+  <meta name="description" content="Filter Lumen's full catalogue by category, brand, price, rating and stock. Sort by price, rating, newest or biggest discount.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page" data-page="shop">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div data-slot="header"></div>
+
+  <main class="page__main" id="main">
+    <div class="container shop">
+
+      <!-- ================= FILTERS ================= -->
+      <aside class="filters shop-filters" aria-label="Product filters">
+        <div class="filters__head">
+          <h2>Filters</h2>
+          <button class="filters__reset" type="button" data-clear-filters>Reset</button>
+          <button class="icon-btn filters__close" type="button" data-close-filters aria-label="Close filters">
+            <span data-icon="close" data-icon-size="18"></span>
+          </button>
+        </div>
+
+        <div class="filter-group" open>
+          <button class="filter-group__toggle" type="button" aria-expanded="true">
+            Category
+          </button>
+          <div class="filter-group__body">
+            <div class="filter-list" data-shop-categories></div>
+          </div>
+        </div>
+
+        <div class="filter-group" open>
+          <button class="filter-group__toggle" type="button" aria-expanded="true">
+            Price
+          </button>
+          <div class="filter-group__body" data-shop-price></div>
+        </div>
+
+        <div class="filter-group" open>
+          <button class="filter-group__toggle" type="button" aria-expanded="true">
+            Brand
+          </button>
+          <div class="filter-group__body">
+            <div data-shop-brands></div>
+          </div>
+        </div>
+
+        <div class="filter-group" open>
+          <button class="filter-group__toggle" type="button" aria-expanded="true">
+            Rating
+          </button>
+          <div class="filter-group__body">
+            <div class="stars-filter" data-shop-rating></div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group__body">
+            <label class="check">
+              <input type="checkbox" data-toggle-deals>
+              <span>On sale only</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" data-toggle-stock>
+              <span>In stock only</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ================= RESULTS ================= -->
+      <div class="shop__results">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-current="page">Shop</span>
+        </nav>
+
+        <div class="shop__head">
+          <h1 class="shop__title" data-shop-title>All products</h1>
+          <p class="shop__count" data-shop-count></p>
+        </div>
+
+        <div class="shop__toolbar">
+          <div class="shop__controls">
+            <button class="btn btn--outline btn--sm filters-toggle" type="button" data-open-filters>
+              <span data-icon="filter" data-icon-size="16"></span>
+              Filters
+            </button>
+
+            <div class="shop__search">
+              <label class="sr-only" for="shopSearch">Search products</label>
+              <input class="input" type="search" id="shopSearch" data-shop-search
+                     placeholder="Search the collection…" autocomplete="off">
+            </div>
+
+            <label class="sr-only" for="shopSort">Sort products</label>
+            <select class="select shop__sort" id="shopSort" data-shop-sort></select>
+
+            <div class="shop__view" role="group" aria-label="Result layout">
+              <button class="icon-btn" type="button" data-set-view="grid" aria-label="Grid view" aria-pressed="true">
+                <span data-icon="grid" data-icon-size="16"></span>
+              </button>
+              <button class="icon-btn" type="button" data-set-view="list" aria-label="List view" aria-pressed="false">
+                <span data-icon="list" data-icon-size="16"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-filters" data-shop-chips></div>
+
+        <div data-shop-root>
+          <div class="product-grid"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div data-slot="footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/storefront.js"></script>
+</body>
+</html>

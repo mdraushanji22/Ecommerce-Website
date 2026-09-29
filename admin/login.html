@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin sign in — Lumen</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../">
+  <div class="admin-auth">
+
+    <aside class="admin-auth__brand">
+      <div class="admin-auth__grid" aria-hidden="true"></div>
+
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/icons/logo.svg" alt="" width="28" height="28">
+        <span class="brand__name">Lumen</span>
+      </a>
+
+      <div class="admin-auth__headline">
+        <h1>Everything about the store, in one place.</h1>
+        <p>Catalogue, orders, customers, reviews, coupons and the settings that
+           shape what shoppers see. All of it runs in this browser — there is no
+           server behind it.</p>
+      </div>
+
+      <dl class="admin-auth__metrics">
+        <div>
+          <dt>25</dt>
+          <dd>Seeded products</dd>
+        </div>
+        <div>
+          <dt>6</dt>
+          <dd>Categories</dd>
+        </div>
+        <div>
+          <dt>90d</dt>
+          <dd>Of seeded history</dd>
+        </div>
+      </dl>
+    </aside>
+
+    <div class="admin-auth__form-side">
+      <div class="admin-auth__form">
+        <a class="brand admin-auth__logo" href="../index.html">
+          <img class="brand__mark" src="../assets/icons/logo.svg" alt="" width="26" height="26">
+          <span class="brand__name">Lumen</span>
+        </a>
+
+        <h2>Admin sign in</h2>
+        <p>Use the administrator account to reach the console.</p>
+
+        <form class="stack" id="adminLoginForm" novalidate>
+          <div class="field">
+            <label class="field__label" for="adminEmail">Admin email</label>
+            <input class="input" type="email" id="adminEmail" name="email"
+                   placeholder="admin@lumen.in" autocomplete="username" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="adminPassword">Password</label>
+            <input class="input" type="password" id="adminPassword" name="password"
+                   placeholder="Your password" autocomplete="current-password" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="adminCode">Access code</label>
+            <input class="input" type="text" id="adminCode" name="code"
+                   placeholder="LUMEN-2026" autocomplete="off">
+            <p class="field__hint">Optional for this demo. Leave it blank to
+               skip the check.</p>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">Sign in to the console</button>
+        </form>
+
+        <div class="demo-creds mt-5">
+          <div class="demo-creds__row">
+            <span>Email <code>admin@lumen.in</code></span>
+            <button class="demo-creds__fill" type="button" data-fill-admin="adminEmail">Use</button>
+          </div>
+          <div class="demo-creds__row">
+            <span>Password <code>Admin@2026</code></span>
+            <button class="demo-creds__fill" type="button" data-fill-admin="adminPassword">Use</button>
+          </div>
+          <div class="demo-creds__row">
+            <span>Access code <code>LUMEN-2026</code></span>
+            <button class="demo-creds__fill" type="button" data-fill-admin="adminCode">Use</button>
+          </div>
+        </div>
+
+        <p class="admin-auth__foot">
+          Not an administrator? <a href="../login.html">Sign in as a customer</a>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

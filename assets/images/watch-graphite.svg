@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Orbit Watch Active 2 in graphite">
+  <defs>
+    <linearGradient id="bgp15" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#e8eaee"/>
+      <stop offset="0.46" stop-color="#dfe2e8"/>
+      <stop offset="1" stop-color="#c2c5cb"/>
+    </linearGradient>
+    <radialGradient id="poolp15" cx="0.42" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vigp15" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.30"/>
+    </radialGradient>
+    <linearGradient id="floorp15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadep15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflp15">
+      <rect x="0" y="604" width="800" height="196" fill="url(#fadep15)"/>
+    </mask>
+    <filter id="softp15" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2p15" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="dropp15" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1A1A20" flood-opacity="0.34"/>
+    </filter>
+    <linearGradient id="mp15" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#2b2d31"/>
+      <stop offset="0.14" stop-color="#808388"/>
+      <stop offset="0.34" stop-color="#474b52"/>
+      <stop offset="0.52" stop-color="#9d9fa3"/>
+      <stop offset="0.72" stop-color="#43464d"/>
+      <stop offset="0.9" stop-color="#676a70"/>
+      <stop offset="1" stop-color="#2e3035"/>
+    </linearGradient>
+    <linearGradient id="scrp15" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#33263A"/>
+      <stop offset="0.55" stop-color="#1a1321"/>
+      <stop offset="1" stop-color="#0A0710"/>
+    </linearGradient>
+    <linearGradient id="glarep15" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="0.34" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="strapp15" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0" stop-color="#34373c"/>
+      <stop offset="0.4" stop-color="#5c6066"/>
+      <stop offset="1" stop-color="#2c2f33"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgp15)"/>
+  <rect width="800" height="800" fill="url(#poolp15)"/>
+  <rect x="0" y="574" width="800" height="226" fill="url(#floorp15)"/>
+
+  <ellipse cx="400" cy="610" rx="150" ry="32" fill="#141419" opacity="0.30" filter="url(#softp15)"/>
+  <ellipse cx="400" cy="606" rx="78" ry="19.2" fill="#0E0E12" opacity="0.38" filter="url(#soft2p15)"/>
+  <g id="pp15" filter="url(#dropp15)">
+
+    <path d="M342 286 L 342 136 Q 342 118 360 118 L 440 118 Q 458 118 458 136 L 458 286 Z" fill="url(#strapp15)"/>
+    <path d="M342 536 L 342 686 Q 342 704 360 704 L 440 704 Q 458 704 458 686 L 458 536 Z" fill="url(#strapp15)"/>
+    <rect x="342" y="226" width="116" height="8" fill="#000000" opacity="0.14"/>
+    <rect x="296" y="286" width="208" height="250" rx="56" fill="url(#mp15)"/>
+    <rect x="309" y="299" width="182" height="224" rx="46" fill="url(#scrp15)"/>
+    <rect x="309" y="299" width="182" height="224" rx="46" fill="url(#glarep15)"/>
+    <g opacity="0.85">
+      <circle cx="400" cy="378" r="44" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="7" stroke-linecap="round" transform="rotate(-90 400 378)" stroke-dasharray="207 277"/>
+      <circle cx="400" cy="378" r="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5" transform="rotate(30 400 378)" stroke-dasharray="132 188"/>
+    </g>
+    <text x="400" y="472" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" font-weight="500" fill="#FFFFFF" letter-spacing="-0.5">72</text>
+    <text x="400" y="494" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#FFFFFF" fill-opacity="0.65">BPM · RESTING</text>
+    <rect x="500" y="378" width="12" height="44" rx="6" fill="#898c91"/>
+    <rect x="506" y="346" width="8" height="20" rx="4" fill="#6e7177"/>
+    <path d="M318 306 A 46 46 0 0 1 370 301" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g mask="url(#reflp15)">
+    <use href="#pp15" transform="translate(0 1208) scale(1 -1)"/>
+  </g>
+  <rect width="800" height="800" fill="url(#vigp15)"/>
+</svg>

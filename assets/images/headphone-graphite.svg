@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Halo Over-Ear ANC headphones in graphite">
+  <defs>
+    <linearGradient id="bgj9" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#e8eaee"/>
+      <stop offset="0.46" stop-color="#dfe2e8"/>
+      <stop offset="1" stop-color="#c2c5cb"/>
+    </linearGradient>
+    <radialGradient id="poolj9" cx="0.42" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vigj9" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.30"/>
+    </radialGradient>
+    <linearGradient id="floorj9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadej9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflj9">
+      <rect x="0" y="604" width="800" height="196" fill="url(#fadej9)"/>
+    </mask>
+    <filter id="softj9" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2j9" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="dropj9" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1A1A20" flood-opacity="0.34"/>
+    </filter>
+    <linearGradient id="mj9" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#2b2d31"/>
+      <stop offset="0.14" stop-color="#808388"/>
+      <stop offset="0.34" stop-color="#474b52"/>
+      <stop offset="0.52" stop-color="#9d9fa3"/>
+      <stop offset="0.72" stop-color="#43464d"/>
+      <stop offset="0.9" stop-color="#676a70"/>
+      <stop offset="1" stop-color="#2e3035"/>
+    </linearGradient>
+    <linearGradient id="padj9" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#25272b"/>
+      <stop offset="0.5" stop-color="#34373c"/>
+      <stop offset="1" stop-color="#212326"/>
+    </linearGradient>
+    <linearGradient id="bandj9" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#96989c"/>
+      <stop offset="0.45" stop-color="#53575e"/>
+      <stop offset="1" stop-color="#35383d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgj9)"/>
+  <rect width="800" height="800" fill="url(#poolj9)"/>
+  <rect x="0" y="574" width="800" height="226" fill="url(#floorj9)"/>
+
+  <ellipse cx="400" cy="610" rx="150" ry="32" fill="#141419" opacity="0.30" filter="url(#softj9)"/>
+  <ellipse cx="400" cy="606" rx="78" ry="19.2" fill="#0E0E12" opacity="0.38" filter="url(#soft2j9)"/>
+  <g id="pj9" filter="url(#dropj9)">
+
+    <path d="M262 372 C 272 250, 326 196, 400 196 C 474 196, 528 250, 538 372"
+          fill="none" stroke="url(#bandj9)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M280 300 C 292 236, 330 206, 400 206"
+          fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5" stroke-linecap="round"/>
+    <g>
+      <rect x="228" y="360" width="132" height="176" rx="52" fill="url(#mj9)"/>
+      <ellipse cx="294" cy="450" rx="56" ry="76" fill="url(#padj9)"/>
+      <ellipse cx="282" cy="432" rx="26" ry="34" fill="#" opacity="0.30"/>
+      <rect x="238" y="378" width="16" height="120" rx="8" fill="#FFFFFF" opacity="0.16"/>
+    </g>
+    <g>
+      <rect x="440" y="360" width="132" height="176" rx="52" fill="url(#mj9)"/>
+      <ellipse cx="506" cy="450" rx="56" ry="76" fill="url(#padj9)"/>
+      <ellipse cx="518" cy="432" rx="26" ry="34" fill="#" opacity="0.26"/>
+      <rect x="546" y="378" width="16" height="120" rx="8" fill="#FFFFFF" opacity="0.16"/>
+    </g>
+    <rect x="220" y="404" width="8" height="56" rx="4" fill="#6e7177"/>
+    <rect x="572" y="404" width="8" height="56" rx="4" fill="#6e7177"/>
+  </g>
+
+  <g mask="url(#reflj9)">
+    <use href="#pj9" transform="translate(0 1208) scale(1 -1)"/>
+  </g>
+  <rect width="800" height="800" fill="url(#vigj9)"/>
+</svg>

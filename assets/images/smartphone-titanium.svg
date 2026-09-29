@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Aurora X1 Pro smartphone in titanium">
+  <defs>
+    <linearGradient id="bga0" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#e8eaee"/>
+      <stop offset="0.46" stop-color="#dfe2e8"/>
+      <stop offset="1" stop-color="#c2c5cb"/>
+    </linearGradient>
+    <radialGradient id="poola0" cx="0.42" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="viga0" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.30"/>
+    </radialGradient>
+    <linearGradient id="floora0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadea0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="refla0">
+      <rect x="0" y="604" width="800" height="196" fill="url(#fadea0)"/>
+    </mask>
+    <filter id="softa0" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2a0" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="dropa0" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1A1A20" flood-opacity="0.34"/>
+    </filter>
+    <linearGradient id="ma0" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#b4b7bc"/>
+      <stop offset="0.22" stop-color="#95999f"/>
+      <stop offset="0.5" stop-color="#6f7277"/>
+      <stop offset="0.74" stop-color="#90949b"/>
+      <stop offset="1" stop-color="#5e6065"/>
+    </linearGradient>
+    <linearGradient id="scra0" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#243043"/>
+      <stop offset="0.55" stop-color="#141c29"/>
+      <stop offset="1" stop-color="#0A0E18"/>
+    </linearGradient>
+    <linearGradient id="glarea0" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="0.34" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rima0" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="#ccced1"/>
+      <stop offset="0.5" stop-color="#72757a"/>
+      <stop offset="1" stop-color="#b0b3b8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bga0)"/>
+  <rect width="800" height="800" fill="url(#poola0)"/>
+  <rect x="0" y="574" width="800" height="226" fill="url(#floora0)"/>
+
+  <ellipse cx="400" cy="610" rx="150" ry="32" fill="#141419" opacity="0.30" filter="url(#softa0)"/>
+  <ellipse cx="400" cy="606" rx="78" ry="19.2" fill="#0E0E12" opacity="0.38" filter="url(#soft2a0)"/>
+  <g id="pa0" filter="url(#dropa0)">
+
+    <rect x="282" y="214" width="236" height="468" rx="42" fill="url(#rima0)"/>
+    <rect x="287" y="219" width="226" height="458" rx="38" fill="url(#ma0)"/>
+    <rect x="295" y="227" width="210" height="442" rx="31" fill="url(#scra0)"/>
+    <rect x="295" y="227" width="210" height="442" rx="31" fill="url(#glarea0)"/>
+    <g opacity="0.5">
+      <path d="M312 514 C 374 450, 450 476, 496 544"
+            fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.5"/>
+      <circle cx="478" cy="570" r="86" fill="#FFFFFF" opacity="0.10"/>
+    </g>
+    <rect x="374" y="236" width="52" height="15" rx="7.5" fill="#05060A"/>
+    <circle cx="388" cy="243.5" r="4" fill="#1B2230"/>
+    <circle cx="412" cy="243.5" r="4" fill="#1B2230"/>
+    <text x="400" y="342" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="46" font-weight="300" fill="#FFFFFF" fill-opacity="0.92" letter-spacing="-1">9:41</text>
+    <text x="400" y="370" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.6">Tuesday, 24 September</text>
+    <rect x="520" y="332" width="5" height="40" rx="2.5" fill="#b0b3b8"/>
+    <rect x="520" y="388" width="5" height="66" rx="2.5" fill="#b0b3b8"/>
+    <rect x="275" y="352" width="5" height="80" rx="2.5" fill="#a7aaaf"/>
+    <path d="M302 222 A 38 38 0 0 1 342 219" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <g mask="url(#refla0)">
+    <use href="#pa0" transform="translate(0 1208) scale(1 -1)"/>
+  </g>
+  <rect width="800" height="800" fill="url(#viga0)"/>
+</svg>

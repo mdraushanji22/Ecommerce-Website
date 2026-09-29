@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="undefined">
+  <defs>
+    <linearGradient id="bgq16" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#ece9e5"/>
+      <stop offset="0.46" stop-color="#e5e1db"/>
+      <stop offset="1" stop-color="#c9c3bd"/>
+    </linearGradient>
+    <radialGradient id="poolq16" cx="0.42" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vigq16" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.30"/>
+    </radialGradient>
+    <linearGradient id="floorq16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeq16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflq16">
+      <rect x="0" y="604" width="800" height="196" fill="url(#fadeq16)"/>
+    </mask>
+    <filter id="softq16" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2q16" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="dropq16" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1A1A20" flood-opacity="0.34"/>
+    </filter>
+    <linearGradient id="mq16" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#a36779"/>
+      <stop offset="0.2" stop-color="#ebb1c2"/>
+      <stop offset="0.55" stop-color="#d888a0"/>
+      <stop offset="0.85" stop-color="#e9a8bb"/>
+      <stop offset="1" stop-color="#9a6172"/>
+    </linearGradient>
+    <linearGradient id="glowq16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2cdd8"/>
+      <stop offset="1" stop-color="#cc8197"/>
+    </linearGradient>
+    <linearGradient id="glareq16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgq16)"/>
+  <rect width="800" height="800" fill="url(#poolq16)"/>
+  <rect x="0" y="574" width="800" height="226" fill="url(#floorq16)"/>
+
+  <ellipse cx="400" cy="610" rx="150" ry="32" fill="#141419" opacity="0.30" filter="url(#softq16)"/>
+  <ellipse cx="400" cy="606" rx="78" ry="19.2" fill="#0E0E12" opacity="0.38" filter="url(#soft2q16)"/>
+  <g id="pq16" filter="url(#dropq16)">
+
+    <rect x="352" y="168" width="96" height="470" rx="46" fill="url(#mq16)"/>
+    <rect x="366" y="188" width="68" height="430" rx="34" fill="url(#glowq16)" opacity="0.35"/>
+    <rect x="362" y="318" width="76" height="170" rx="30" fill="#0B0B10"/>
+    <rect x="362" y="318" width="76" height="170" rx="30" fill="url(#glareq16)" opacity="0.5"/>
+    <text x="400" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" font-weight="500" fill="#FFFFFF">64</text>
+    <text x="400" y="408" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#FFFFFF" fill-opacity="0.6">STEPS</text>
+    <g opacity="0.8">
+      <circle cx="400" cy="450" r="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"/>
+      <circle cx="400" cy="450" r="9" fill="#E38FA8"/>
+    </g>
+    <rect x="372" y="182" width="14" height="442" rx="7" fill="#FFFFFF" opacity="0.18"/>
+    <rect x="346" y="260" width="8" height="34" rx="4" fill="#885665"/><rect x="346" y="318" width="8" height="34" rx="4" fill="#885665"/><rect x="346" y="376" width="8" height="34" rx="4" fill="#885665"/><rect x="346" y="434" width="8" height="34" rx="4" fill="#885665"/><rect x="346" y="492" width="8" height="34" rx="4" fill="#885665"/>
+  </g>
+
+  <g mask="url(#reflq16)">
+    <use href="#pq16" transform="translate(0 1208) scale(1 -1)"/>
+  </g>
+  <rect width="800" height="800" fill="url(#vigq16)"/>
+</svg>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen — Premium technology, priced honestly</title>
+  <meta name="description" content="Lumen is a demonstration storefront for premium laptops, phones, audio, wearables and cameras. Free delivery across India on orders above ₹999, with 7-day returns.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page" data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div data-slot="header"></div>
+
+  <main class="page__main" id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow" data-reveal>New season · Autumn 2026</p>
+            <h1 class="hero__title" data-reveal data-reveal-delay="60">
+              Technology that earns<br>its place on your desk.
+            </h1>
+            <p class="hero__sub" data-reveal data-reveal-delay="120">
+              We stock a deliberately small range: twenty-five products we would
+              use ourselves. No filler, no endless variants, no inflated
+              “was” prices. Free delivery across India above ₹999.
+            </p>
+            <div class="hero__cta" data-reveal data-reveal-delay="180">
+              <a class="btn btn--primary btn--lg" href="shop.html">Shop the collection</a>
+              <a class="btn btn--outline btn--lg" href="#categories">Browse by category</a>
+            </div>
+            <dl class="hero__meta" data-home-hero-stats data-reveal data-reveal-delay="240"></dl>
+          </div>
+
+          <div class="hero__media" data-reveal="scale" data-reveal-delay="120">
+            <div class="hero__image">
+              <img src="assets/images/hero.svg"
+                   alt="A curated selection of Lumen laptops, phones, audio and wearables"
+                   width="720" height="720" fetchpriority="high">
+            </div>
+            <div class="hero__pill hero__pill--a">
+              <span class="dot"></span>
+              <span><strong>25</strong><small>Products in stock</small></span>
+            </div>
+            <div class="hero__pill hero__pill--b">
+              <span class="dot dot--in"></span>
+              <span><strong>4.7★</strong><small>From 3,400 ratings</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST STRIP ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="trust-grid" data-home-trust data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <h2>Shop by category</h2>
+            <p>Six categories, each kept small on purpose. Everything is covered
+               by a 12-month manufacturer warranty handled through support.</p>
+          </div>
+          <a class="link-arrow" href="shop.html">View everything</a>
+        </div>
+        <div class="category-grid" data-home-categories></div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <h2>Featured this month</h2>
+            <p>The pieces our team reaches for first.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=featured">Shop all</a>
+        </div>
+        <div data-home-featured></div>
+      </div>
+    </section>
+
+    <!-- ================= DEAL BAND ================= -->
+    <section class="section">
+      <div class="container">
+        <div data-home-dealband></div>
+      </div>
+    </section>
+
+    <!-- ================= NEW ARRIVALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <h2>New arrivals</h2>
+            <p>Just landed, and already in our Bengaluru warehouse.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=newest">See everything new</a>
+        </div>
+        <div data-home-new></div>
+      </div>
+    </section>
+
+    <!-- ================= DEALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <h2>On sale now</h2>
+            <p>Real reductions against our own listed price. No inflated
+               discounts to make the number look bigger.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?deals=1">All deals</a>
+        </div>
+        <div data-home-deals></div>
+      </div>
+    </section>
+
+    <!-- ================= BESTSELLERS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <h2>What people actually buy</h2>
+            <p>Ranked by verified purchases over the last ninety days.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=rating">Top rated</a>
+        </div>
+        <div data-home-best></div>
+      </div>
+    </section>
+
+    <!-- ================= PROMO BAND ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="promo" data-reveal="right">
+          <img class="promo__img" src="assets/images/detail-inuse.svg"
+               alt="Lumen headphones being used at a desk" width="600" height="600" loading="lazy">
+          <div class="promo__inner">
+            <p class="promo__tag">
+              <span class="dot dot--in"></span> Lumen Care
+            </p>
+            <h2 class="promo__title">Extended cover, from ₹899</h2>
+            <p class="promo__sub">
+              Add two years of accidental-damage and theft cover to any product
+              at checkout, with a single replacement instead of a percentage
+              deduction. Available on selected laptops, phones and cameras.
+            </p>
+            <div class="promo__cta">
+              <a class="btn btn--light btn--lg" href="shop.html">See eligible products</a>
+              <a class="btn btn--glass btn--lg" href="#faq">How it works</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <div>
+            <h2>What customers say</h2>
+            <p>Unedited notes from verified orders, collected in the last quarter.</p>
+          </div>
+        </div>
+        <div class="quote-grid" data-home-testimonials></div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <div>
+            <h2>Questions we get asked</h2>
+            <p>Still stuck? Our support desk answers on WhatsApp, Monday to
+               Saturday, 9 am to 8 pm.</p>
+          </div>
+        </div>
+        <div class="faq-list" data-home-faq data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter" data-reveal>
+          <div>
+            <h2>Restock alerts and honest reviews</h2>
+            <p>One email when something you want comes back, and one when we
+               publish a long-form review. Nothing else, ever.</p>
+          </div>
+          <form class="newsletter__form" data-newsletter-form novalidate>
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input class="input" type="email" id="newsletterEmail" name="email"
+                   placeholder="you@example.com" autocomplete="email" required>
+            <button class="btn btn--primary" type="submit">Notify me</button>
+            <p class="field__hint">Demo only — the address is stored in this browser and never sent anywhere.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-slot="footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/storefront.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="products">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Products</h1>
+          <p>Add, edit and remove catalogue entries. Changes appear on the
+             storefront immediately.</p>
+        </div>
+        <div class="admin-page__actions">
+          <button class="btn btn--primary btn--sm" type="button" data-admin-add-product>Add product</button>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="table-toolbar">
+          <div class="table-toolbar__search">
+            <label class="sr-only" for="adminProductSearch">Search products</label>
+            <input class="input" type="search" id="adminProductSearch"
+                   data-admin-product-search placeholder="Search name, brand or category…"
+                   autocomplete="off">
+          </div>
+
+          <div class="table-toolbar__right">
+            <label class="sr-only" for="adminProductCategory">Filter by category</label>
+            <select class="select select--sm" id="adminProductCategory" data-admin-product-category>
+              <option value="all">All categories</option>
+            </select>
+            <span class="muted" data-admin-filter-count></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="adminProductsTable">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Category</th>
+                <th scope="col" class="num">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Rating</th>
+                <th scope="col" class="num">Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-products-tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="admin-note">
+        Product images come from the offline set in
+        <code>assets/images</code>. Deleting a product removes it from the
+        storefront and from any carts that referenced it.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

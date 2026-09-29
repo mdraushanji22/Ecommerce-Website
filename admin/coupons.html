@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coupons — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="coupons">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Coupons</h1>
+          <p>Percentage or flat discounts, with minimum order and expiry rules.</p>
+        </div>
+        <div class="admin-page__actions">
+          <button class="btn btn--primary btn--sm" type="button" data-admin-add-coupon>Add coupon</button>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="table-toolbar">
+          <div class="table-toolbar__search">
+            <label class="sr-only" for="adminCouponSearch">Search coupons</label>
+            <input class="input" type="search" id="adminCouponSearch"
+                   data-admin-coupon-search placeholder="Search code or description…"
+                   autocomplete="off">
+          </div>
+
+          <div class="table-toolbar__right">
+            <label class="sr-only" for="adminCouponStatus">Filter by status</label>
+            <select class="select select--sm" id="adminCouponStatus" data-admin-coupon-status>
+              <option value="all">All coupons</option>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+            <span class="muted" data-admin-filter-count></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="adminCouponsTable">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Discount</th>
+                <th scope="col" class="num">Min. order</th>
+                <th scope="col" class="num">Uses</th>
+                <th scope="col">Expiry</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="num">Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-coupons-tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="admin-note">
+        Try <code>WELCOME10</code> on the cart page. Coupon rules are applied in
+        the browser, so nothing here is enforced server-side.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

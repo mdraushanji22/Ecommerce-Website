@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="orders">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Orders</h1>
+          <p>Move an order through the fulfilment flow, view its timeline and
+             download an invoice.</p>
+        </div>
+        <div class="admin-page__actions">
+          <a class="btn btn--outline btn--sm" href="../orders.html">Shopper view</a>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="table-toolbar">
+          <div class="table-toolbar__search">
+            <label class="sr-only" for="adminOrderSearch">Search orders</label>
+            <input class="input" type="search" id="adminOrderSearch"
+                   data-admin-order-search placeholder="Search order number, customer or status…"
+                   autocomplete="off">
+          </div>
+
+          <div class="table-toolbar__right">
+            <label class="sr-only" for="adminOrderStatus">Filter by status</label>
+            <select class="select select--sm" id="adminOrderStatus" data-admin-order-status>
+              <option value="all">All statuses</option>
+              <option value="Processing">Processing</option>
+              <option value="Confirmed">Confirmed</option>
+              <option value="Packed">Packed</option>
+              <option value="Shipped">Shipped</option>
+              <option value="Out for delivery">Out for delivery</option>
+              <option value="Delivered">Delivered</option>
+              <option value="Cancelled">Cancelled</option>
+              <option value="Returned">Returned</option>
+            </select>
+            <span class="muted" data-admin-filter-count></span>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="adminOrdersTable">
+            <thead>
+              <tr>
+                <th scope="col">Order</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Items</th>
+                <th scope="col">Payment</th>
+                <th scope="col" class="num">Total</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="num">Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-orders-tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="admin-note">
+        Status changes are written straight to the shopper's order history, so
+        the tracking timeline on <code>orders.html</code> updates too.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

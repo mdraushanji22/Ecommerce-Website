@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store settings — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="settings">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Settings</h1>
+          <p>Store details, shipping rules and the switches that change what
+             shoppers see.</p>
+        </div>
+        <div class="admin-page__actions">
+          <button class="btn btn--outline btn--sm" type="button" data-reset-settings>Reset to defaults</button>
+          <button class="btn btn--primary btn--sm" type="button" data-save-settings>Save changes</button>
+        </div>
+      </header>
+
+      <form id="settingsForm" novalidate>
+        <section class="admin-section">
+          <div class="card">
+            <div class="settings-group__head">
+              <h3>Store details</h3>
+              <p>Used in the footer, invoices and order confirmations.</p>
+            </div>
+            <div class="settings-group__body">
+              <div class="admin-form">
+                <div class="admin-form__row">
+                  <div class="field">
+                    <label class="field__label" for="setStoreName">Store name</label>
+                    <input class="input" type="text" id="setStoreName" name="storeName">
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="setTagline">Tagline</label>
+                    <input class="input" type="text" id="setTagline" name="tagline">
+                  </div>
+                </div>
+                <div class="admin-form__row">
+                  <div class="field">
+                    <label class="field__label" for="setSupportEmail">Support email</label>
+                    <input class="input" type="email" id="setSupportEmail" name="supportEmail" autocomplete="email">
+                    <p class="field__error" data-error="supportEmail" role="alert"></p>
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="setSupportPhone">Support phone</label>
+                    <input class="input" type="tel" id="setSupportPhone" name="supportPhone" autocomplete="tel">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="setAddress">Registered address</label>
+                  <textarea class="input" id="setAddress" name="address" rows="2"></textarea>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="setGstin">GSTIN</label>
+                  <input class="input" type="text" id="setGstin" name="gstin">
+                  <p class="field__hint">Printed on every invoice.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <div class="card">
+            <div class="settings-group__head">
+              <h3>Shipping and tax</h3>
+              <p>Catalogue prices already include GST, so the rate is only shown
+                 for information.</p>
+            </div>
+            <div class="settings-group__body">
+              <div class="admin-form">
+                <div class="admin-form__row admin-form__row--3">
+                  <div class="field">
+                    <label class="field__label" for="setFreeShippingOver">Free shipping over (₹)</label>
+                    <input class="input" type="number" id="setFreeShippingOver" name="freeShippingOver" min="0" step="1">
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="setShippingFlat">Flat shipping (₹)</label>
+                    <input class="input" type="number" id="setShippingFlat" name="shippingFlat" min="0" step="1">
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="setTaxRate">GST rate (%)</label>
+                    <input class="input" type="number" id="setTaxRate" name="taxRate" min="0" max="100" step="0.1">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__head">
+                    <h4 class="card__title">Shopper preview</h4>
+                  </div>
+                  <div class="card__body" data-settings-preview></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <div class="card">
+            <div class="settings-group__head">
+              <h3>Operations</h3>
+              <p>Switches for low stock alerts and account creation.</p>
+            </div>
+            <div class="settings-group__body">
+              <div class="admin-list">
+                <div class="admin-list__row">
+                  <div class="admin-list__desc">
+                    <div class="admin-list__label">Low stock threshold</div>
+                    <p class="admin-list__desc">Products at or below this count
+                       are flagged on the dashboard.</p>
+                  </div>
+                  <div class="switch-row">
+                    <label class="sr-only" for="setLowStockAlert">Low stock threshold</label>
+                    <input class="input" type="number" id="setLowStockAlert" name="lowStockAlert" min="0" step="1" style="width:96px">
+                  </div>
+                </div>
+
+                <div class="admin-list__row">
+                  <div class="admin-list__desc">
+                    <div class="admin-list__label">Order confirmation emails</div>
+                    <p class="admin-list__desc">Send a receipt when an order is
+                       placed. Nothing is actually sent in this demo.</p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="orderEmails">
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="admin-list__row">
+                  <div class="admin-list__desc">
+                    <div class="admin-list__label">Allow new signups</div>
+                    <p class="admin-list__desc">Turn off to stop the signup page
+                       from creating accounts.</p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="allowSignup">
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="admin-list__row">
+                  <div class="admin-list__desc">
+                    <div class="admin-list__label">Maintenance mode</div>
+                    <p class="admin-list__desc">Show a notice on the storefront
+                       while you make changes.</p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="maintenanceMode">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+
+      <p class="admin-note">
+        Settings are stored under <code>lumen:settings</code> and read on every
+        storefront page, so changes take effect as soon as you save.
+      </p>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

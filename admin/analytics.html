@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analytics — Lumen Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-root="../" data-admin-page="analytics">
+  <div class="admin">
+    <div data-admin-shell></div>
+    <main class="admin__content">
+
+      <header class="admin-page__head">
+        <div>
+          <h1>Analytics</h1>
+          <p>Trading performance over a period you choose, rendered on canvas.</p>
+        </div>
+        <div class="admin-page__actions">
+          <label class="sr-only" for="analyticsRange">Reporting period</label>
+          <select class="select select--sm" id="analyticsRange" data-analytics-range>
+            <option value="7">Last 7 days</option>
+            <option value="14">Last 14 days</option>
+            <option value="30" selected>Last 30 days</option>
+            <option value="90">Last 90 days</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="admin-section">
+        <div class="stat-grid" data-analytics-stats></div>
+      </section>
+
+      <section class="admin-section">
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h2 class="card__title">Revenue</h2>
+              <p class="card__sub">Daily order value, inclusive of GST.</p>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="chart">
+              <canvas class="chart__canvas" data-chart="revenue" height="320"
+                      role="img" aria-label="Line chart of daily revenue"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section">
+        <div class="dash-grid dash-grid--even">
+
+          <div class="card">
+            <div class="card__head">
+              <div>
+                <h2 class="card__title">Orders per day</h2>
+                <p class="card__sub">Count of orders placed each day.</p>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="chart">
+                <canvas class="chart__canvas" data-chart="orders" height="240"
+                        role="img" aria-label="Bar chart of orders placed per day"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__head">
+              <div>
+                <h2 class="card__title">Revenue by category</h2>
+                <p class="card__sub">Where the money is coming from.</p>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="chart">
+                <canvas class="chart__canvas" data-chart="category" height="240"
+                        role="img" aria-label="Doughnut chart of revenue by category"></canvas>
+              </div>
+              <ul class="legend" data-analytics-legend></ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="admin-section">
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h2 class="card__title">Best sellers</h2>
+              <p class="card__sub">Ranked by units sold across every order.</p>
+            </div>
+          </div>
+          <div class="card__body card__body--flush">
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="num">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col" class="num">Units</th>
+                    <th scope="col" class="num">Revenue</th>
+                  </tr>
+                </thead>
+                <tbody data-analytics-top></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>
